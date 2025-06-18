@@ -336,6 +336,166 @@
 
 ---
 
+# Mave - Glassmorphism Website
+
+A beautiful, modern website featuring glassmorphism design with smooth animations and theme switching capabilities.
+
+## 🎨 Design Features
+
+### Color Palette
+
+- **Primary Colors**: #FCB813, #E3A611, #FEE9B6, #FFF4DC
+- **Glassmorphism Effects**: Translucent backgrounds with backdrop blur
+- **Theme Support**: Light and dark mode with smooth transitions
+
+### Typography
+
+- **Primary Font**: Graphik (with fallback to Inter)
+- **Secondary Font**: Manrope
+- **Hierarchy**: Headings, bold, and regular body styles with optimized line heights
+
+### Components
+
+- Glassmorphism cards with backdrop blur
+- Animated background elements
+- Smooth hover effects and transitions
+- Theme toggle with persistent storage
+- Responsive design for all devices
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd mave-website
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Add Graphik fonts (optional):
+
+   - Download Graphik font files from the official source
+   - Place them in `public/fonts/` directory:
+     - `Graphik-Regular.woff2`
+     - `Graphik-Medium.woff2`
+     - `Graphik-Bold.woff2`
+
+4. Run the development server:
+
+```bash
+npm run dev
+```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🛠️ Built With
+
+- **Next.js 14** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **Lucide React** - Icon library
+
+## 🎯 Features
+
+- ✨ Glassmorphism design with backdrop blur effects
+- 🌓 Light/Dark theme switching with persistent storage
+- 📱 Fully responsive design
+- 🎭 Smooth animations and transitions
+- 🎨 Custom color palette and typography
+- ⚡ Optimized performance
+- 🔧 TypeScript for better development experience
+
+## 📁 Project Structure
+
+```
+mave-website/
+├── app/
+│   ├── components/
+│   │   └── ThemeToggle.tsx
+│   ├── contexts/
+│   │   └── ThemeContext.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+│   └── fonts/
+│       └── README.md
+├── tailwind.config.ts
+├── tsconfig.json
+└── package.json
+```
+
+## 🎨 Customization
+
+### Colors
+
+Update the color palette in `tailwind.config.ts` and `app/globals.css`:
+
+```typescript
+primary: {
+  50: "#FFF4DC",
+  100: "#FFF4DC",
+  200: "#FFF4DC",
+  300: "#FFF4DC",
+  400: "#FFF4DC",
+  500: "#FEE9B6",
+  600: "#E3A611",
+  700: "#FCB813",
+  800: "#E3A611",
+  900: "#FCB813",
+}
+```
+
+### Typography
+
+Modify font families in `tailwind.config.ts`:
+
+```typescript
+fontFamily: {
+  'graphik': ['Graphik', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+  'manrope': ['Manrope', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+}
+```
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🤝 Contributing
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🙏 Acknowledgments
+
+- Glassmorphism design inspiration
+- Graphik font family
+- Manrope font family
+- Framer Motion for animations
+
 <div align="center">
   <p><strong>© 2025 MAVE CMS | All rights reserved | Powered by Ether Technologies</strong></p>
 </div>
