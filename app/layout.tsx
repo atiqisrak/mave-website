@@ -18,8 +18,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Mave - Glassmorphism Website",
-  description: "A beautiful glassmorphism website with modern design and smooth animations",
+  title: "Mave - AI Powered Headless CMS",
+  description: "Mave is an open-source visual editing and content platform for building websites and apps. Integrate with existing codebases. Performs incredibly fast.",
 };
 
 export default function RootLayout({

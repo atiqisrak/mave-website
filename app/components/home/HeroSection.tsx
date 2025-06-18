@@ -4,11 +4,20 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useTheme } from '@/app/contexts/ThemeContext';
 import RotatingText from '../ui/RotatingText';
-import Image from 'next/image';
+import TiltedCard from '../ui/TiltedCard';
 
 export default function HeroSection() {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
+
+  const tags = [
+    "Internal tools",
+    "Customer portals",
+    "SaaS apps",
+    "Storefronts",
+    "Websites",
+    "Content management"
+  ];
 
   return (
     <div className={`relative z-10 container mx-auto px-4 py-20 pt-40`}>
@@ -51,29 +60,29 @@ export default function HeroSection() {
         </p>
 
         <div className="flex justify-center items-center">
-        <Image
-          src="/images/hero.png"
-          alt="Hero Image"
-          width={1000}
-          height={1000}
-            className="w-[60vw] h-auto rounded-lg border-2 border-primary-700/20"
+          <TiltedCard
+            imageSrc="/images/hero.svg"
+            altText="Hero Image"
+            containerHeight="450px"
+            containerWidth="60vw"
+            imageHeight="500px"
+            imageWidth="58vw"
+            scaleOnHover={0.96}
+            rotateAmplitude={5}
+            showMobileWarning={false}
+            showTooltip={false}
           />
         </div>
 
-        <motion.div 
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          <button className="w-full sm:w-auto glass-button bg-primary-700 text-white hover:bg-primary-800 flex items-center justify-center gap-2">
-            Get Started
-            <ArrowRight className="w-4 h-4" />
-          </button>
-          <button className="w-full sm:w-auto glass-button text-foreground hover:text-primary-700">
-            Learn More
-          </button>
-        </motion.div>
+        <div className="tags flex flex-wrap gap-2 justify-center items-center mt-32">
+            {tags.map((tag, index) => (
+                <h4 key={index} className="text-gray-500 dark:text-gray-400 px-4 py-0
+                 rounded-full border border-foreground/10 font-graphik font-medium">
+                    {tag}
+                </h4>
+            ))}
+        </div>
+
       </motion.div>
     </div>
   );
