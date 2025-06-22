@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { Star, Zap, Sparkles } from 'lucide-react';
 import { useTheme } from './contexts/ThemeContext';
 import HeroSection from './components/home/HeroSection';
+import Clients from './components/home/Clients';
+import Features from './components/home/Features';
 
 export default function Home() {
   const { theme } = useTheme();
@@ -16,6 +18,8 @@ export default function Home() {
         : 'bg-white'
     }`}>
       <HeroSection />
+      <Clients />
+      <Features />
     </div>
   );
 }

@@ -20,7 +20,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <div className={`relative z-10 container mx-auto px-4 py-20 pt-40`}>
+    <div className={`relative z-10 container mx-auto px-4 pt-40`}>
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ export default function HeroSection() {
             altText="Hero Image"
             containerHeight="450px"
             containerWidth="60vw"
-            imageHeight="500px"
+            imageHeight="71vh"
             imageWidth="58vw"
             scaleOnHover={0.96}
             rotateAmplitude={5}
@@ -74,7 +74,7 @@ export default function HeroSection() {
           />
         </div>
 
-        <div className="tags flex flex-wrap gap-2 justify-center items-center mt-32">
+        <div className="tags flex flex-wrap gap-2 justify-center items-center mt-56">
             {tags.map((tag, index) => (
                 <h4 key={index} className="text-gray-500 dark:text-gray-400 px-4 py-0
                  rounded-full border border-foreground/10 font-graphik font-medium">
